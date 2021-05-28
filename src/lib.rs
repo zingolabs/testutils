@@ -3,7 +3,7 @@ pub struct Comparator<T: PartialEq + Display> {
     expected: T,
     observed: T,
 }
-pub impl<T: PartialEq + Display> Comparator<T> {
+impl<T: PartialEq + Display> Comparator<T> {
     pub fn compare(self) {
         //! Our convention is that "expected" is "first"
         if self.expected != self.observed {
