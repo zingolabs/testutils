@@ -1,7 +1,7 @@
 use std::fmt::Display;
 pub struct Comparator<T: PartialEq + Display> {
-    expected: T,
-    observed: T,
+    pub expected: T,
+    pub observed: T,
 }
 impl<T: PartialEq + Display> Comparator<T> {
     pub fn compare(self) {
